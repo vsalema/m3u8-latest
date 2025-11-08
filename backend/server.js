@@ -50,5 +50,5 @@ app.post('/save', saveLimiter, async (req, res) => {
     return res.json({ ok: true, saved: payload });
   }catch(e){ return res.status(500).json({ error: 'internal error' }); }
 });
+app.listen(PORT, '0.0.0.0', () => console.log('API up on :' + PORT));
 
-app.listen(PORT, () => console.log('API up on :' + PORT));
