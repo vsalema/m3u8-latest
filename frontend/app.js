@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadLatestBtn = document.getElementById('loadLatest');
   const injectManualBtn = document.getElementById('injectManual');
 
-  const DEFAULT_API_BASE = "https://your-render-url.example.com";
+  const DEFAULT_API_BASE = "https://m3u8-latest.onrender.com";
   apiBaseInput.value = DEFAULT_API_BASE;
 
   let hls = null;
